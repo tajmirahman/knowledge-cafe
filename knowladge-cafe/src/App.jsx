@@ -1,15 +1,23 @@
-
-
+import Header from "./components/Header/Header"
+import Blogs from "./components/Blogs/Blogs"
+import Bookmark from "./components/Bookmark/Bookmark"
 
 function App() {
 
 
   return (
     <>
-      
-      <h1 className='text-7xl bg-red-700'>Vite + React</h1>
-      
-      
+      <div className="max-w-6xl mx-auto">
+        <Header></Header>
+        {/* <hr className="mb-4 bg-red-200 "/> */}
+        <div className=" md:flex ">
+          <Blogs></Blogs>
+          <Bookmark></Bookmark>
+        </div>
+      </div>
+
+
+
     </>
   )
 }

@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co.com/hxPYHWvm/watercolor-painting-brush-effect-social-media-cover-95007-351.jpg",
+      "title": "The Adventures of Time",
+      "author": "Jane Doe",
+      "author_img": "https://example.com/images/author-jane.jpg",
+      "posted_date": "2025-02-17",
+      "reading_time": 8,
+      "hashtag": ["#adventure", "#fantasy", "#timeTravel"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co.com/4QfZtJR/explore-world-travel-agency-social-media-facebook-cover-banner-template-265396-93.jpg",
+      "title": "Mysteries of the Ocean",
+      "author": "John Smith",
+      "author_img": "https://example.com/images/author-john.jpg",
+      "posted_date": "2025-02-14",
+      "reading_time": 12,
+      "hashtag": ["#mystery", "#ocean", "#exploration"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co.com/zWY8XWY1/8804388.jpg",
+      "title": "Future Chronicles",
+      "author": "Emily Johnson",
+      "author_img": "https://example.com/images/author-emily.jpg",
+      "posted_date": "2025-02-10",
+      "reading_time": 10,
+      "hashtag": ["#sciFi", "#dystopia", "#future"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co.com/svJX7skJ/19330959.jpg",
+      "title": "Culinary Dreams",
+      "author": "Michael Brown",
+      "author_img": "https://example.com/images/author-michael.jpg",
+      "posted_date": "2025-02-08",
+      "reading_time": 7,
+      "hashtag": ["#cooking", "#recipes", "#foodie"]
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co.com/pv2jJQg5/Real-Estate-Facebook-Cover-Banner-15.jpg",
+      "title": "Secrets of the Forest",
+      "author": "Sophia Green",
+      "author_img": "https://example.com/images/author-sophia.jpg",
+      "posted_date": "2025-01-30",
+      "reading_time": 9,
+      "hashtag": ["#nature", "#forest", "#mystery"]
+    }
+  ]
+  
