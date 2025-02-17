@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import profile_pic from '../../assets/images/boy1.png'
+import { FaBookmark } from "react-icons/fa";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleBookMark }) => {
     const { cover, title, author, posted_date, reading_time, hashtag } = blog;
     return (
         <div className=' '>
@@ -16,7 +17,14 @@ const Blog = ({ blog }) => {
                     </div>
                 </div>
                 <div>
-                    <span>{reading_time} min red </span>
+                    <div className='flex gap-2'>
+                        <span>{reading_time} min red </span>
+
+                        <button onClick={handleBookMark} className='text-red-400 text-2xl'>
+                            <FaBookmark />
+                        </button>
+                    </div>
+
                 </div>
 
             </div>
