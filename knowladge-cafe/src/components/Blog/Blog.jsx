@@ -3,6 +3,7 @@ import profile_pic from '../../assets/images/boy1.png'
 import { FaBookmark } from "react-icons/fa";
 
 const Blog = ({ blog, handleBookMark }) => {
+   
     const { cover, title, author, posted_date, reading_time, hashtag } = blog;
     return (
         <div className=' '>
@@ -20,7 +21,7 @@ const Blog = ({ blog, handleBookMark }) => {
                     <div className='flex gap-2'>
                         <span>{reading_time} min red </span>
 
-                        <button onClick={handleBookMark} className='text-red-400 text-2xl'>
+                        <button onClick={()=>handleBookMark(blog)} className='text-red-400 text-2xl'>
                             <FaBookmark />
                         </button>
                     </div>
@@ -39,7 +40,8 @@ const Blog = ({ blog, handleBookMark }) => {
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleBookMark: PropTypes.func.isRequired
 }
 
 export default Blog;

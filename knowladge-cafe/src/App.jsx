@@ -5,10 +5,12 @@ import { useState } from "react"
 
 function App() {
 
-  const [bookMark, setBookmark] = useState();
+  const [bookMarks, setBookmarks] = useState([]);
 
   const handleBookMark = (blog) => {
-    console.log('book mark coming soon')
+    // console.log(blog)
+    const newBookMarks=[...bookMarks, blog];
+    setBookmarks(newBookMarks); 
   }
 
   return (
@@ -20,9 +22,9 @@ function App() {
         
         <div className=" md:flex ">
           <Blogs handleBookMark={handleBookMark}></Blogs>
-          <Bookmark></Bookmark>
+          <Bookmark bookMarks={bookMarks}></Bookmark>
         </div>
-        
+
       </div>
 
 
