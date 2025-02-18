@@ -6,12 +6,24 @@ import { useState } from "react"
 function App() {
 
   const [bookMarks, setBookmarks] = useState([]);
+  const [markAsRead, setMarkAsRead]= useState(0);
 
   const handleBookMark = (blog) => {
     // console.log(blog)
     const newBookMarks=[...bookMarks, blog];
     setBookmarks(newBookMarks); 
   }
+
+  const handleMarkAsRead=(id, time)=>{
+    setMarkAsRead(markAsRead + time);
+
+    // remove bookmark
+   
+    const remaining = bookMarks.filter(bookmark=> bookmark.id !== id);
+    setBookmarks(remaining);
+  }
+
+
 
   return (
     <>
@@ -21,8 +33,9 @@ function App() {
         <Header></Header>
         
         <div className=" md:flex ">
-          <Blogs handleBookMark={handleBookMark}></Blogs>
-          <Bookmark bookMarks={bookMarks}></Bookmark>
+          <Blogs handleBookMark={handleBookMark} handleMarkAsRead={handleMarkAsRead}></Blogs>
+
+          <Bookmark bookMarks={bookMarks} markAsRead={markAsRead}></Bookmark>
         </div>
 
       </div>
